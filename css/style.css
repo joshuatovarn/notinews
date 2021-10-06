@@ -208,4 +208,13 @@ body {
     .gallery-item:nth-child(3) {
         grid-row-start: span 1;
     }
+
+    .navbar a {
+        margin-left: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .icons{
+        padding-top: 1rem;
+    }
 }
