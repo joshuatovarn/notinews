@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Besley&display=swap');
 
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --first-color: red;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -17,39 +23,39 @@ body {
 .title {
     padding: 20px 0;
     text-align: center;
-    font-size: 1em;
+    font-size: 1rem;
     text-transform: uppercase;
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
     margin: 1em auto;
 
     display: grid;
-    gap: 1.5em;
+    gap: 1.5rem;
     grid-template-columns: repeat(5, 1fr);
 }
 
 /********NAVBAR*******/
 
 .navbar {
-    padding: 15px;
-    background-color: red;
     display: flex;
     justify-content: center;
+    padding: 1rem;
+    background-color: var(--first-color);
 }
 
 .navbar a {
     text-decoration: none;
-    color: white;
-    background-color: red;
-    margin-left: 20px;
-    font-size: 18px;
+    color: var(--white-color);
+    background-color: var(--first-color);
+    margin-left: 2rem;
+    font-size: 1.5rem;
 }
 
 .navbar a:hover {
-    text-decoration: underline;
+    text-decoration: overline;
 }
 
 .navbar,
@@ -64,12 +70,13 @@ body {
 }
 
 .article {
-    padding: 20px;
+    padding: 1rem;
     margin-top: 5px;
+    transition: all .3s ease-in-out;
 }
 
 .article p {
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .article:hover {
@@ -84,7 +91,7 @@ body {
 }
 
 .sidebar p {
-    font-size: 15px;
+    font-size: 1rem;
     margin-bottom: 20px;
 }
 
@@ -94,13 +101,19 @@ body {
 }
 
 .text-img {
-    font-size: 15px;
+    font-size: 1rem;
     text-align: center;
+    transition: all .3s ease-in-out;
+}
+
+.text-img a{
+    text-decoration: none;
+    color: var(--black-color);
 }
 
 .text-img:hover {
     cursor: pointer;
-    text-decoration: underline;
+    background-color: rgb(204, 203, 203);   
 }
 
 /********Gallery************/
@@ -108,7 +121,7 @@ body {
 .gallery-container {
     width: 90%;
     max-width: 1000px;
-    margin: 1em auto;
+    margin: 1rem auto;
 }
 
 .gallery {
@@ -141,17 +154,16 @@ body {
 
 /********FOOTER************/
 
-
 .footer {
-    padding: 25px;
-    background-color: red;
-    color: white;
+    padding: 2rem;
+    background-color: var(--first-color);
+    color: var(--white-color);
 }
 
 .footer a {
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: none;
-    color: white;
+    color: var(--white-color);
 }
 
 .footer a:hover {
@@ -166,12 +178,18 @@ body {
 
 .social-media a {
     text-decoration: none;
-    color: white;
+    color: var(--white-color);
 }
 
-.fab {
-    margin-left: 20px;
-    font-size: 1.5em;
+.icons {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    transition: all .3s ease-in-out;
+    color: var(--white-color);
+}
+
+.icons:hover{
+    color: var(--black-color);
 }
 
 @media screen and (max-width:880px) {
